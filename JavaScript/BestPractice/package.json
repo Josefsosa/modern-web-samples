@@ -1,0 +1,27 @@
+{
+  "name": "js-sample-code",
+  "version": "1.0.0",
+  "description": "This repo contain sample js code.",
+  "scripts": {
+    "lint": "eslint --quiet app",
+    "lint-warn": "eslint app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josefsosa/modern-web-samples.git"
+  },
+  "author": "Jose F. Sosa",
+  "bugs": {
+    "url": "https://github.com/Josefsosa/modern-web-samples/issues"
+  },
+  "homepage": "https://github.com/Josefsosa/modern-web-samples",
+  "devDependencies": {
+    "eslint": "^2.8.0",
+    "ghooks": "^1.2.1"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
