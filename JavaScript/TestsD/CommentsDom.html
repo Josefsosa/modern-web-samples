@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+        function setup() {
+            // Write your code here.
+            $("#postComment").click(function () {
+                const inputText = $("#comment").val()
+                const ul = $('#commentList')
+                if(inputText !== "") {
+                    ul.append(`<li>${inputText}</li>`)
+                }
+                $("#comment").val("")
+            })
+        }
+
+        // Example case.
+        //document.body.innerHTML = "<ul id='commentList'></ul><form><input type='text' id='comment'/><input type='button' id='postComment' value='Post'/></form>";
+        //document.elements.objectId.() = "Some new HTML content";
+
+        function myFunc(variable){
+            var s = document.getElementById(variable);
+
+            window.onload=function() { // or window.addEventListener("load",function() {
+                s.innerHTML = "new value";
+            };
+
+            console.log(s);
+        }
+        myFunc("Mian");
+
+        setup();
+
+        $("#comment").val("test");
+        $("#postComment").click();
+
+       // console.log(document.getElementById(Main).innerText);
+    </script>
+
+</head>
+<body>
+    <div ID="Mian">
+    </div>
+</body>
+</html>
