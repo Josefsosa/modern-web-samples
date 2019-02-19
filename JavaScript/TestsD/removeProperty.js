@@ -9,7 +9,7 @@ function removeProperty(obj,prop){
     else {
         return false;
     }
-}
+};
 
 var obj= {
     name:"John"
